@@ -1,0 +1,22 @@
+name: sync thin Repo
+
+on:
+  push:
+    branches:
+    - 'master'
+  workflow_dispatch:
+
+jobs:
+  publish:
+    name: "Sync to Thin "
+    runs-on: [self-hosted, Linux, X64]
+    steps:
+    - uses: icub-tech-iit/gh-action-repo-selective-sync@v1.0.0
+      with:
+        # 指向位于源存储库中的文件，该文件包含将数据从源复制到目标存储库的规则
+        recipe-file: '.sync_thin/recipe.yml'
+        # 允许访问源存储库的个人访问令牌（PAT）
+        token-source: ${{ secrets.GITHUB_TOKEN }}
+        # 允许访问目标存储库的个人访问令牌（PAT）。
+        token-target: ${{ secrets.TARGET_PAT }}
+        sudo-passwd: ${{ secrets.SELF_HOSTED_RUNNER_PASSWD }}
