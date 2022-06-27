@@ -14,9 +14,9 @@ source:
     - "src/store/modules/locale.ts"
     - "src/store/modules/menu.ts"
     - "src/store/modules/settings.ts"
-    - "src/store/modules/tabsbar.ts" 
-    - "src/store/modules/user.ts" 
-    - "src/utils" 
+    - "src/store/modules/tabsbar.ts"
+    - "src/store/modules/user.ts"
+    - "src/utils"
     - "src/views/about"
     - "src/views/dashboard"
     - "src/views/pages/login"
@@ -27,7 +27,7 @@ source:
     - "package.json"
     - "vite.config.ts"
     - "vitest.config.ts"
-    - "windi.config.ts" 
+    - "windi.config.ts"
 target:
   # 指定不同于源的目标分支
   repo: "idxiu/demo_template"
@@ -47,9 +47,9 @@ target:
     - "src/store/modules/locale.ts"
     - "src/store/modules/menu.ts"
     - "src/store/modules/settings.ts"
-    - "src/store/modules/tabsbar.ts" 
-    - "src/store/modules/user.ts" 
-    - "src/utils" 
+    - "src/store/modules/tabsbar.ts"
+    - "src/store/modules/user.ts"
+    - "src/utils"
     - "src/views/about"
     - "src/views/dashboard"
     - "src/views/pages/login"
@@ -60,6 +60,6 @@ target:
     - "package.json"
     - "vite.config.ts"
     - "vitest.config.ts"
-    - "windi.config.ts" 
+    - "windi.config.ts"
   # 列出要删除的路径来请求清理（可以留空）。
   #remove_after_copy: 
