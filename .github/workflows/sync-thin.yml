@@ -2,12 +2,11 @@ name: sync thin Repo
 
 on:
   push:
-    branches:
-    - 'master'
+    branches: [ "master" ]
   workflow_dispatch:
 
 jobs:
-  publish:
+  build:
     name: "Sync to Thin "
     runs-on: [self-hosted, Linux, X64]
     steps:
