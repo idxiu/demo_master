@@ -12,9 +12,9 @@ jobs:
     #[self-hosted, Linux, X64]
     runs-on: ubuntu-latest  
     steps:
-    - uses: icub-tech-iit/gh-action-repo-selective-sync@v1.0.0
+    - uses: icub-tech-iit/gh-action-repo-selective-sync@v1.1.1
       with:
-        recipe-file: '.publish/recipe.yml'
+        recipe-file: '.sync/recipe.yml'
         token-source: ${{ secrets.GITHUB_TOKEN }}
         token-target: ${{ secrets.TARGET_PAT }}
         sudo-passwd: ${{ secrets.SELF_HOSTED_RUNNER_PASSWD }}

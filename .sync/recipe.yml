@@ -62,5 +62,4 @@ target:
     - "vitest.config.ts"
     - "windi.config.ts" 
   # 列出要删除的路径来请求清理（可以留空）。
-  remove_after_copy:
-    -
+  #remove_after_copy: 
