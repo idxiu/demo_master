@@ -15,6 +15,6 @@ jobs:
     - uses: icub-tech-iit/gh-action-repo-selective-sync@v1.1.1
       with:
         recipe-file: '.sync/recipe.yml'
-        token-source: ${{ secrets.GITHUB_TOKEN }}
+        token-source: ${{ secrets.GH_TOKEN }}
         token-target: ${{ secrets.TARGET_PAT }}
         # sudo-passwd: ${{ secrets.SELF_HOSTED_RUNNER_PASSWD }}
