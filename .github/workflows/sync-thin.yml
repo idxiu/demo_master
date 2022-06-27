@@ -10,7 +10,7 @@ jobs:
     name: "Sync to Thin "
     runs-on: [self-hosted, Linux, X64]
     steps:
-    - uses: icub-tech-iit/gh-action-repo-selective-sync@v1.0.0
+    - uses: icub-tech-iit/gh-action-repo-selective-sync@v1.1.1
       with:
         # 指向位于源存储库中的文件，该文件包含将数据从源复制到目标存储库的规则
         recipe-file: '.sync_thin/recipe.yml'
