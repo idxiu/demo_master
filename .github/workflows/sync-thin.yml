@@ -17,4 +17,4 @@ jobs:
         recipe-file: '.sync/recipe.yml'
         token-source: ${{ secrets.GITHUB_TOKEN }}
         token-target: ${{ secrets.TARGET_PAT }}
-        sudo-passwd: ${{ secrets.SELF_HOSTED_RUNNER_PASSWD }}
+        # sudo-passwd: ${{ secrets.SELF_HOSTED_RUNNER_PASSWD }}
