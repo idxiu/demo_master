@@ -161,7 +161,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/toimc-team/vue-toimc-admin.git"
+    "url": "git+https://github.com/idxiu/demo_master.git"
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx}": [
