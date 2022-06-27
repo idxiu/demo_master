@@ -1,4 +1,4 @@
-name: Publish Repo
+name: sync thin Repo
 
 on:
   push:
@@ -7,9 +7,10 @@ on:
   workflow_dispatch:
 
 jobs:
-  publish:
-    name: "Publish"
-    runs-on: [self-hosted, Linux, X64]
+  build:
+    name: "Sync to Thin"
+    #[self-hosted, Linux, X64]
+    runs-on: ubuntu-latest  
     steps:
     - uses: icub-tech-iit/gh-action-repo-selective-sync@v1.0.0
       with:
